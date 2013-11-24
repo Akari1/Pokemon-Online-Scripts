@@ -27,7 +27,7 @@
 					break;
 				}
 			}
-			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ". I'd just like to inform you I am not battling myself, but using this script here: http://pokemon-online.eu/forums/showthread.php?17275-Lutra-s-Battle-Scripts . Thank you.");
+			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ". BattleBot v1.7 quite a few bugs at the moment BE DESTROYED. Thank you.");
 		}
 	},
 	onChoiceSelection: function() {
