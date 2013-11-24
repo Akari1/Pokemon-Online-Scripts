@@ -8,7 +8,15 @@
 				timer = 0;
 				pause_sent = false;
 			}
-		
+			reset();
+			pause = function (trigger){
+				if (!pause_sent){
+					var resume_time = 61 - timer;
+					sys.delayedCall(event[trigger], resume_time);
+					battle.battleMessage(battle.id, "Script bugged out please contact Tyrantrum ASAP.");
+					pause_sent = true;
+				}
+			}
 			sys.intervalCall(function(){timer++;},1000);
 			sys.intervalCall(reset, 60000);
 			alive = [0,1,2,3,4,5];
@@ -19,7 +27,7 @@
 					break;
 				}
 			}
-			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ".  Face the wrath of BattleBot v1.7 Created By: Tyrantrum . Thank you.");
+			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ". I'd just like to inform you I am not battling myself, but using this script here: http://pokemon-online.eu/forums/showthread.php?17275-Lutra-s-Battle-Scripts . Thank you.");
 		}
 	},
 	onChoiceSelection: function() {
