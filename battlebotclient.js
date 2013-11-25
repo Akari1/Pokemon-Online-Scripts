@@ -8,7 +8,7 @@
        return;
 }
 if (message == "~commands") {
-client.network().sendChanMessage(channel, "Commands are ~mute, ~jump");
+client.network().sendChanMessage(channel, "Commands are ~mute, ~jump, ~joke, ~joke2, joke3, ~catch, ~attack");
 return;
 }
 if (message == "~mute") {
@@ -33,6 +33,10 @@ return;
 }
 if (message == "~catch") {
 client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand(1, 649)) + "!");
+}
+if (message == "~attack") {
+client.network().sendChanMessage(channel, "You used"  + sys.attack(sys.rand(1, 559)) + "!");
+
 
 }   
 }
