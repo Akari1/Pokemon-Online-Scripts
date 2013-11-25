@@ -8,7 +8,7 @@
        return;
 }
 if (message == "~commands") {
-client.network().sendChanMessage(channel, "Commands are ~mute, ~jump, ~joke, ~joke2, joke3, ~catch, ~attack");
+client.network().sendChanMessage(channel, "Commands are ~mute, ~jump, ~pun1, ~pun2, pun3, ~catch, ~attack");
 return;
 }
 if (message == "~mute") {
@@ -19,15 +19,15 @@ if (message == "~jump") {
 client.network().sendChanMessage(channel, "** Jumps!.");
 return;
 }
-if (message == "~joke") {
+if (message == "~pun1") {
 client.network().sendChanMessage(channel, "Did you hear about the guy whose whole left side was cut off? He's all right now.");
 return;
 }
-if (message == "~joke2") {
+if (message == "~pun2") {
 client.network().sendChanMessage(channel, "I'm reading a book about anti-gravity. It's impossible to put down.");
 return;
 }
-if (message == "~joke3") {
+if (message == "~pun3") {
 client.network().sendChanMessage(channel, "It's not that the man did not know how to juggle, he just didn't have the balls to do it.");
 return;
 }
@@ -36,7 +36,6 @@ client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand
 }
 if (message == "~attack") {
 client.network().sendChanMessage(channel, "You used"  + sys.attack(sys.rand(1, 559)) + "!");
-
 
 }   
 }
