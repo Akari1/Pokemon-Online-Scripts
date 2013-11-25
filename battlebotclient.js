@@ -32,7 +32,7 @@ client.network().sendChanMessage(channel, "It's not that the man did not know ho
 return;
 }
 if (message == "~catch") {
-client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand(1, 560)) + "!");
+client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand(1, 649)) + "!");
 
 }   
 }
