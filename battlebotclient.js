@@ -30,6 +30,10 @@ return;
 if (message == "~joke3") {
 client.network().sendChanMessage(channel, "It's not that the man did not know how to juggle, he just didn't have the balls to do it.");
 return;
+}
+if (message == "~catch") {
+client.network().sendChanMessage(channel, "You caught a"  + sys.pokemon(sys.rand(1, 560)) + "!");
+
 }   
 }
 });
