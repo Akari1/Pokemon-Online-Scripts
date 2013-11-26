@@ -4,7 +4,7 @@
         message = message.substr(message.indexOf(':') + 2); 
         }
     if (message == "BattleBot") { // Put bot name 
-        client.network().sendChanMessage(channel, "BattleBot Version 1.7 Current Supported Tiers: XY 1v1 Created By: Tyrantrum, Akari1 Use ~commands to view commands");
+        client.network().sendChanMessage(channel, "BattleBot Version 2.3 Current Supported Tiers: XY 1v1 Created By: Tyrantrum, Akari1 Use ~commands to view commands");
        return;
 // Displays the commands
 }
