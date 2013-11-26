@@ -27,7 +27,7 @@
 					break;
 				}
 			}
-			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ". BattleBot v1.7 quite a few bugs at the moment BE DESTROYED. Thank you.");
+			battle.battleMessage(battle.id, "Hello " + battle.data.team(battle.opp).name + ". BattleBot v2.3 quite a few bugs at the moment BE DESTROYED. Thank you.");
 		}
 	},
 	onChoiceSelection: function() {
