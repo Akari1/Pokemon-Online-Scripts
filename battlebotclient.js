@@ -19,11 +19,15 @@ if (message == "-jump") {
 client.network().sendChanMessage(channel, "** Jumps!.");
 return;
 }
+if (message == "-scenario") {
+client.network().sendChanMessage(channel, "Who would win? "  + sys.pokemon(sys.rand(1, 649)) + " VS "  + sys.pokemon(sys.rand(1, 649)) + "!");
+return;
+}
 if (message == "-catch") {
-client.network().sendChanMessage(channel, " You caught a " + sys.gender(sys.rand(1,2)) + ":" + sys.pokemon(sys.rand(1, 649)) + " with a " + sys.nature(sys.rand(1,8)) + " nature!");
+client.network().sendChanMessage(channel, " You caught a " + sys.gender(sys.rand(0, 3)) + " " + sys.pokemon(sys.rand(1, 649)) + " with a " + sys.nature(sys.rand(1,8)) + " nature!");
 }
 if (message == "-attack") {
-client.network().sendChanMessage(channel, "You used " + sys.move(sys.rand(0, 559)) + " It took down " + sys.rand(0, 230) + " HP.");
+client.network().sendChanMessage(channel, "You used " + sys.move(sys.rand(0, 559)) + " It took down " + sys.rand(0, 230) + " HP.");21
 }
 if (message == "-botbattle") {
 client.network().sendChanMessage(channel, "»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»");
