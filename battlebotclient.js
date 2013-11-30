@@ -8,7 +8,7 @@
        return;
 }
 if (message == "-commands") {
-client.network().sendChanMessage(channel, "Commands are -mute, -jump, -catch, -attack, -botbattle.");
+client.network().sendChanMessage(channel, "Commands are -mute, -jump, -catch, -attack, -botbattle, -dig, -scenario.");
 return;
 }
 if (message == "-mute") {
