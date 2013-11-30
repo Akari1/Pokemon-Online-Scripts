@@ -20,7 +20,7 @@ client.network().sendChanMessage(channel, "** Jumps!.");
 return;
 }
 if (message == "-catch") {
-client.network().sendChanMessage(channel, " You caught a "  + sys.pokemon(sys.rand(1, 649)) + "!");
+client.network().sendChanMessage(channel, " You caught a " + sys.gender(sys.rand(1,2)) + ":" + sys.pokemon(sys.rand(1, 649)) + " with a " + sys.nature(sys.rand(1,8)) + " nature!");
 }
 if (message == "-attack") {
 client.network().sendChanMessage(channel, "You used " + sys.move(sys.rand(0, 559)) + " It took down " + sys.rand(0, 230) + " HP.");
