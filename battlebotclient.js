@@ -20,10 +20,10 @@ client.network().sendChanMessage(channel, "Who would win? "  + sys.pokemon(sys.r
 return;
 }
 if (message == "-catch") {
-client.network().sendChanMessage(channel, " You caught a " + sys.gender(sys.rand(0, 3)) + " " + sys.pokemon(sys.rand(1, 649)) + " with a " + sys.nature(sys.rand(1,8)) + " nature!");
+client.network().sendChanMessage(channel, " You caught a " + sys.gender(sys.rand(0, 3)) + " " + sys.pokemon(sys.rand(1, 649)) + " with a " + sys.nature(sys.rand(1,25)) + " nature!");
 }
 if (message == "-dig") {
-client.network().sendChanMessage(channel, " You dug up a " + sys.item(sys.rand(1, 175)) + "!");
+client.network().sendChanMessage(channel, " You dug up a " + sys.item(sys.rand(1, 190)) + "!");
 }
 if (message == "-attack") {
 client.network().sendChanMessage(channel, "You used " + sys.move(sys.rand(0, 559)) + " It took down " + sys.rand(0, 230) + " HP.");
