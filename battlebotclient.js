@@ -33,7 +33,11 @@ if (message == "Yo") {
 client.network().sendChanMessage(channel, "Hi " + name + ".");
 }
 if (message == "-commands") {
-client.network().sendChanMessage(channel, "Commands are -jump, -catch, -attack, -botbattle, -scenario, -dig, -randomMS .");
+client.network().sendChanMessage(channel, "Commands are -jump, -catch, -attack, -botbattle, -scenario, -dig, -kill, -randomMS .");
+return;
+}
+if (message == "kill") {
+client.network().sendChanMessage(channel, "/me kills " + name "!");
 return;
 }
 if (message == "-jump") {
