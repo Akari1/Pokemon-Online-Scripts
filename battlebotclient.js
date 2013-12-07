@@ -4,6 +4,7 @@ if (message.indexOf(':') >= 0) {
 name = message.split(':')[0];
  message = message.substr(message.indexOf(':') + 2);
 }
+message = message.toLowerCase();
 if (message == "Golurk") { // Put bot name
 client.network().sendChanMessage(channel, "BattleBot Version 3.0 Current Supported Tiers: XY 1v1 Created By: Tyrantrum, Akari1 Use -commands to view commands");
 return;
